@@ -1,0 +1,75 @@
+.app {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
+.content-wrapper {
+  text-align: left;
+  width: 328px;
+}
+
+.logo {
+  max-width: 128px;
+  margin-bottom: 16px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  .submit-button {
+    width: 98px;
+    height: 36px;
+    background: $primary-color;
+    box-shadow: 0px 3px 6px $shadow-color;
+    border-width: 0;
+    border-radius: 4px;
+    color: $background-color;
+    font: normal 14px/16px Roboto;
+    letter-spacing: 1.25px;
+
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}
+
+.validation-msg {
+  color: $secondary-color;
+  font: normal 12px/16px Roboto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 30px;
+    background: $background-color;
+  }
+
+  .content-wrapper {
+    width: 370px;
+    background: $container-background-color;
+    box-shadow: 0px 3px 6px $shadow-color;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px 0;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
