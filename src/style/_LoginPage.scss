@@ -1,8 +1,8 @@
 .app {
   .container {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
   }
 }
@@ -13,8 +13,8 @@
 }
 
 .logo {
-  max-width: 128px;
   margin-bottom: 16px;
+  max-width: 128px;
 }
 
 .image-wrapper {
@@ -31,19 +31,15 @@
   justify-content: flex-end;
 
   .submit-button {
-    width: 98px;
-    height: 36px;
     background: $primary-color;
-    box-shadow: 0px 3px 6px $shadow-color;
-    border-width: 0;
     border-radius: 4px;
+    border-width: 0;
+    box-shadow: 0px 3px 6px $shadow-color;
     color: $background-color;
     font: normal 14px/16px Roboto;
+    height: 36px;
     letter-spacing: 1.25px;
-
-    &:hover {
-      background: $primary-color;
-    }
+    width: 98px;
   }
 }
 
@@ -54,19 +50,19 @@
 
 @media (max-width: 600px) {
   .container {
-    padding: 0 30px;
     background: $background-color;
+    padding: 0 30px;
   }
 
   .content-wrapper {
-    width: 370px;
-    background: $container-background-color;
-    box-shadow: 0px 3px 6px $shadow-color;
-    border-radius: 4px;
-    display: flex;
     align-items: center;
+    background: $container-background-color;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px $shadow-color;
+    display: flex;
     flex-direction: column;
     padding: 22px 0;
+    width: 370px;
   }
 
   .form {
